@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,700;0,900;1,200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  min-height: 100vh !important;
+}
+a {
+  text-decoration: none;
+  color: #309a33;
+  font-weight: 600;
+}
+a:hover {
+  color: #f7651c;
+}
+::selection {
+  color: #fff;
+  background: #000;
+}
+/* start heade section */
+header#mainHead {
+  width: 100%;
+  background: #15765b;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  box-shadow: 2px 1px 5px 2px #827f7f;
+}
+.headSection {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+input#nav_check {
+  display: none;
+}
+#nav_label {
+  display: none;
+}
+.headSection {
+  display: flex;
+  justify-content: space-between;
+  padding: 21px 0;
+  align-items: center;
+  position: relative;
+}
+.headSection ul {
+  display: flex;
+  list-style: none;
+}
+.headSection ul li a {
+  padding: 0 10px;
+  text-decoration: none;
+  color: #f2f0f0;
+  font-size: 18px;
+}
+.logo p {
+  font-size: 27px;
+  font-weight: bold;
+  color: #fff;
+  padding: 0 5px;
+}
+.logo p span {
+  color: red;
+}
+.headSection ul li a:hover {
+  color: #f7651c;
+}
+/* media query */
+@media screen and (max-width: 975px) {
+  .logo p {
+    font-size: 22px;
+  }
+  .headSection ul li a {
+    font-size: 18px;
+    padding: 13px 5px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+  }
+}
+
+
+@media screen and (max-width: 880px) {
+  #nav_label {
+    display: block;
+    margin-right: 1rem;
+    font-size: 25px;
+    border: 1px solid #f4edef;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 2px;
+  }
+  .headSection ul {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    display: block;
+    background: #44907b;
+    width: 100%;
+    min-height: 100vh;
+    transition: all 0.5s;
+  }
+  .logo p {
+    font-size: 20px !important;
+  }
+  .headSection {
+    padding: 20px 0;
+  }
+  input[type="checkbox"]:checked ~ .headSection ul {
+    left: 0;
+  }
+}
+/* end heade section */

@@ -1,0 +1,74 @@
+section#formSection {
+  margin: 5rem 0;
+  margin-bottom: 0;
+  padding: 50px 20px;
+  background: #ddd;
+}
+.container {width: 100%;max-width: 1000px;margin: auto;}
+.mainForm {
+  width: 100%;
+  max-width: 525px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 3px;
+}
+.mainForm h3 {
+  text-align: center;
+  padding: 14px 0;
+  font-size: 25px;
+  color: rgb(65, 62, 62);
+}
+.inputBox {
+  margin-bottom: 15px;
+}
+.inputBox span {
+  display: block;
+  padding: 7px 0;
+  font-size: 19px;
+}
+
+.inputBox input,.inputBox select {
+  width: 100%;
+  font-size: 22px;
+  padding: 5px;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid rgb(206, 204, 204);
+  transition: all .5s;
+}
+
+.inputBox input:focus{
+  border: 1px solid black;
+
+}
+
+.inputBox input[type="submit"]{
+  font-weight: 600;
+  color: #15765b;
+  padding: 10px;
+}
+
+.inputBox input[type="submit"]:focus{
+  background: rgb(180, 179, 179);
+  border: 1px solid rgb(138, 136, 136);
+}
+.inp_field {
+  position: relative;
+}
+.inp_field input{
+  padding: 10px;
+  padding-left: 39px;
+}
+
+.form_icon {
+  position: absolute;
+  top: 15px;
+  left: 9px;
+  font-size: 21px;
+  color: #3f775b;
+}
+a.passwordReset {
+  display: block;
+  margin-top: 30px;
+}

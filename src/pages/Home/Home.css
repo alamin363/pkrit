@@ -1,0 +1,117 @@
+section#topSection {
+    padding: 20px;
+}
+.topPadding{
+    margin-top: 115px;
+    margin-bottom: 100px;
+}
+.container {
+    width: 100%;
+    max-width: 1360px;
+    margin: auto;
+}
+
+.sectionWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.singleBox {
+    width: 45%;
+}
+h2.welcmTitle {
+    font-size: 50px;
+    margin-top: 40px;
+    padding-bottom: 30px;
+}
+p.wlcmDescription {
+    font-size: 25px;
+    color: #444;
+}
+a.wlcmBtn {
+    display: inline-block;
+    margin-top: 30px;
+    background: #318a5d;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    transition: all .5s;
+}
+a.wlcmBtn:hover {
+    background: #3f56cb;
+}
+img.wlcmImg {
+    margin-top: 40px;
+    width: 100%;
+}
+/* middle section  */
+.middleSingleBox {
+    display: inline-block;
+    width: 30%;
+    border: 1px solid #b7b7b7;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    background: #dbdbdb;
+}
+
+h1.missionTitle {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: #525252;
+}
+
+section#middleSection {
+    background: #e3e0e0;
+    padding: 70px 0;
+}
+.middleSingleBox{
+    transition: all .3s;
+}
+.middleSingleBox:hover {
+    background: #d1d1d1;
+}
+.middleSingleBox i {
+    font-size: 35px;
+    margin: 15px 10px;
+    color: #40765b;
+}
+
+.middleSingleBox h1 {
+    font-size: 25px;
+    margin: 10px 0;
+    color: #24975d;
+}
+
+.middleSingleBox p {
+    font-size: 17px;
+    margin: 15px 0;
+    color: #525252;
+    text-align: justify;
+}
+/* media query */
+@media screen and (max-width:920px) {
+    .sectionWrapper{
+        display: block;
+    }
+    .singleBox{
+        width: 100%;
+        display: block;
+    }
+    h2.welcmTitle{
+        font-size: 35px;
+        width: 100%;
+        margin-top: 0;
+    }
+    p.wlcmDescription{
+        font-size: 22px;
+    }
+    /* middle section  */
+    .middleSingleBox{
+        display: block;
+        margin: 10px auto;
+        width: 90%;
+    }
+}
